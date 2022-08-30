@@ -7,6 +7,7 @@ namespace task7
         static void Main(string[] args)
         {
             string name;
+            string symbolString = null;
             char symbol;
             int lenghtSymbolString;
             int borderSymbol = 2;
@@ -19,16 +20,12 @@ namespace task7
 
             for (int i=0; i< lenghtSymbolString; i++)
             {
-                Console.Write(symbol);
+                symbolString += symbol;
             }
 
-            Console.WriteLine();
+            Console.WriteLine(symbolString);
             Console.WriteLine(symbol+name+symbol);
-
-            for (int i = 0; i < lenghtSymbolString; i++)
-            {
-                Console.Write(symbol);
-            }
+            Console.WriteLine(symbolString);
         }
     }
 }
